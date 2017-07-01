@@ -13,7 +13,7 @@ public class HomePresenter extends BasePresenter<HomeActivity> {
 
     public void loadPresentList() {
 
-        //~~~
+        //presenter가 수행할 작업
         ArrayList<String> abcArray = new ArrayList<>();
         abcArray.add("a");
         abcArray.add("b");
@@ -30,6 +30,7 @@ public class HomePresenter extends BasePresenter<HomeActivity> {
             temp += abc + "\n";
         }
 
+        //수행 작업 완료시, activity로 전달
         view.onCompletePresentLoad(temp);
     }
 }
